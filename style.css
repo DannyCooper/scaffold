@@ -430,8 +430,8 @@ table {
 --------------------------------------------------------------*/
 
 label {
-    font-size: 14px;
-    color: #9e9e9e;
+	font-size: 14px;
+	color: #9e9e9e;
 }
 
 button,
@@ -661,7 +661,7 @@ a:active {
 
 .menu-1 {
 	background: #253e80;
-    font-size: 14px;
+	font-size: 14px;
 	margin-bottom: 50px
 }
 
@@ -704,7 +704,7 @@ a:active {
 
 .menu-1 ul ul a {
 	width: 200px;
-    text-align: left;
+	text-align: left;
 	border-top: 1px solid #253e80;
 	border-right: 1px solid #253e80
 }
@@ -1173,7 +1173,7 @@ object {
 	}
 
 	.menu-1 li {
-    	float: none;
+		float: none;
 	    width: 100%;
 	}
 
@@ -1191,7 +1191,7 @@ object {
 }
 
 .menu-1 ul ul a {
-    width: 100%;
+	width: 100%;
 }
 
 .menu-1 ul ul ul {

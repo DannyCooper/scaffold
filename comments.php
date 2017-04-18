@@ -28,30 +28,30 @@ if ( post_password_required() ) {
 		<h4 class="comments-title">
 			<?php
 				$comments_number = get_comments_number();
-				if ( '1' === $comments_number ) {
-					/* translators: %s: post title */
-					printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'scaffold' ), get_the_title() );
-				} else {
-					printf(
-						/* translators: 1: number of comments, 2: post title */
-						 esc_html( _nx(
-							'%1$s Reply to &ldquo;%2$s&rdquo;',
-							'%1$s Replies to &ldquo;%2$s&rdquo;',
-							$comments_number,
-							'comments title',
-							'scaffold'
-						) ),
-						esc_html( number_format_i18n( $comments_number ) ),
-						get_the_title()
-					 );
-				}
+			if ( '1' === $comments_number ) {
+				/* translators: %s: post title */
+				printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'scaffold' ), get_the_title() );
+			} else {
+				printf(
+					/* translators: 1: number of comments, 2: post title */
+					esc_html( _nx(
+						'%1$s Reply to &ldquo;%2$s&rdquo;',
+						'%1$s Replies to &ldquo;%2$s&rdquo;',
+						$comments_number,
+						'comments title',
+						'scaffold'
+					) ),
+					esc_html( number_format_i18n( $comments_number ) ),
+					get_the_title()
+				);
+			}
 			?>
 		</h2><!-- .comments-title -->
 
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'callback' => 'scaffold_comment'
+					'callback' => 'scaffold_comment',
 				) );
 			?>
 		</ol><!-- .comment-list -->

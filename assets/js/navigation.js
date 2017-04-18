@@ -3,7 +3,10 @@
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
+ *
+ * @package scaffold
  */
+
 ( function() {
 	var container, button, menu, links, i, len;
 

@@ -14,8 +14,8 @@
 	<?php if ( has_post_thumbnail() ) : ?>
 	<div class="post-thumbnail">
 		<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-        	<?php the_post_thumbnail(); ?>
-    	</a>
+			<?php the_post_thumbnail(); ?>
+		</a>
 	</div>
 	<?php endif; ?>
 
@@ -37,7 +37,7 @@
 
 	<div class="entry-content">
 		<?php
-			the_content( esc_html__( 'Continue reading &rarr;', 'scaffold' )  );
+			the_content( esc_html__( 'Continue reading &rarr;', 'scaffold' ) );
 
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'scaffold' ),
