@@ -1,0 +1,10 @@
+/*
+Theme Name: Scaffold
+Description: Used to style WooCommerce pages.
+*/
+
+.woocommerce .content-area {
+    width: 100%;
+    float: none;
+	clear: both
+}
