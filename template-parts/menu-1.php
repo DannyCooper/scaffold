@@ -13,4 +13,4 @@
 		'theme_location' => 'menu-1',
 		'menu_id' => 'site-menu',
 	) ); ?>
-</nav><!-- .site-navigation -->
+</nav><!-- .menu-1 -->

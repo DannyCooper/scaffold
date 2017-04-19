@@ -1,7 +1,7 @@
 === Scaffold ===
 
-Contributors: dannycooper
-Tags: translation-ready, custom-background, theme-options, custom-menu, threaded-comments
+Contributors: DannyCooper
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, threaded-comments, translation-ready, blog, e-commerce
 
 Requires at least: 4.0
 Tested up to: 4.7.3

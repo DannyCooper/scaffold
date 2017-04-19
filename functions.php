@@ -37,50 +37,50 @@ if ( ! function_exists( 'scaffold_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'scaffold' ),
+			'menu-1' => esc_html__( 'Primary Menu', 'scaffold' ),
 		) );
 
-			/*
-			 * Switch default core markup for search form, comment form, and comments
-			 * to output valid HTML5.
-			 */
-			add_theme_support( 'html5', array(
-				'search-form',
-				'comment-form',
-				'comment-list',
-				'gallery',
-				'caption',
-			) );
+		/*
+		 * Switch default core markup for search form, comment form, and comments
+		 * to output valid HTML5.
+		 */
+		add_theme_support( 'html5', array(
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		) );
 
-			// Set up the WordPress core custom background feature.
-			add_theme_support( 'custom-background', apply_filters( 'scaffold_custom_background_args', array(
-				'default-color' => 'ffffff',
-				'default-image' => '',
-			) ) );
+		// Set up the WordPress core custom background feature.
+		add_theme_support( 'custom-background', apply_filters( 'scaffold_custom_background_args', array(
+			'default-color' => 'ffffff',
+			'default-image' => '',
+		) ) );
 
-			// Add theme support for selective refresh for widgets.
-			add_theme_support( 'customize-selective-refresh-widgets' );
+		// Add theme support for selective refresh for widgets.
+		add_theme_support( 'customize-selective-refresh-widgets' );
 
-			// Add image size for blog posts, 600px wide (and unlimited height).
-			add_image_size( 'scaffold-blog', 600 );
+		// Add image size for blog posts, 600px wide (and unlimited height).
+		add_image_size( 'scaffold-blog', 600 );
 
-			// Add stylesheet for the WordPress editor.
-			add_editor_style( '/assets/css/editor-style.css' );
+		// Add stylesheet for the WordPress editor.
+		add_editor_style( '/assets/css/editor-style.css' );
 
-			// Add support for custom logo.
-			add_theme_support( 'custom-logo', array(
-				'height'      => 100,
-				'width'       => 400,
-				'flex-height' => true,
-				'flex-width'  => true,
-				'header-text' => array( 'site-title', 'site-description' ),
-			) );
+		// Add support for custom logo.
+		add_theme_support( 'custom-logo', array(
+			'height'      => 100,
+			'width'       => 400,
+			'flex-height' => true,
+			'flex-width'  => true,
+			'header-text' => array( 'site-title', 'site-description' ),
+		) );
 
-			// Add support for WooCommerce.
-			add_theme_support( 'woocommerce' );
-			add_theme_support( 'wc-product-gallery-zoom' );
-			add_theme_support( 'wc-product-gallery-lightbox' );
-			add_theme_support( 'wc-product-gallery-slider' );
+		// Add support for WooCommerce.
+		add_theme_support( 'woocommerce' );
+		add_theme_support( 'wc-product-gallery-zoom' );
+		add_theme_support( 'wc-product-gallery-lightbox' );
+		add_theme_support( 'wc-product-gallery-slider' );
 
 	}
 endif;
@@ -159,6 +159,9 @@ require get_template_directory() . '/inc/customizer.php';
  */
 require get_template_directory() . '/inc/jetpack.php';
 
+/**
+ * If the WooCommerce plugin is active, load the related functions.
+ */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/woocommerce/functions.php';
 }

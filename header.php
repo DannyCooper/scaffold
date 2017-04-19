@@ -2,7 +2,7 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * This is the template that displays all of the <head> section and everything up until <div class="site-content">
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
@@ -37,12 +37,12 @@
 			endif;
 
 			$description = get_bloginfo( 'description', 'display' );
-if ( $description || is_customize_preview() ) : ?>
+			if ( $description || is_customize_preview() ) : ?>
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
 		</div><!-- .site-branding -->
-	</header><!-- #masthead -->
+	</header><!-- .site-header -->
 
 	<?php get_template_part( 'template-parts/menu-1' );?>
 

@@ -23,13 +23,12 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php
-	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
 		<h4 class="comments-title">
 			<?php
 				$comments_number = get_comments_number();
 			if ( '1' === $comments_number ) {
-				/* translators: %s: post title */
+				// translators: %s: post title.
 				printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'scaffold' ), get_the_title() );
 			} else {
 				printf(
