@@ -5,7 +5,7 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 
 Requires at least: 4.0
 Tested up to: 4.7.3
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ Scaffold is a lightweight starter theme built using core WordPress functions. It
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.2 - May 30 2017 =
+* Fix custom header function
 
 = 1.0.1 - May 30 2017 =
 * Theme review fixes
