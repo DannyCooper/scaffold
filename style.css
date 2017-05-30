@@ -1178,40 +1178,38 @@ object {
 	    width: 100%;
 	}
 
+	.menu-1 ul ul {
+		position: relative;
+		float: none;
+		left: auto;
+		display: none
+	}
 
+	.menu-1 ul li:hover > ul, .menu-1 ul li.focus > ul {
+		display: block;
+	}
 
-.menu-1 ul ul {
-	position: relative;
-	float: none;
-	left: auto;
-	display: none
-}
+	.menu-1 ul ul a {
+		width: 100%;
+	}
 
-.menu-1 ul li:hover > ul, .menu-1 ul li.focus > ul {
-	display: block;
-}
-
-.menu-1 ul ul a {
-	width: 100%;
-}
-
-.menu-1 ul ul ul {
-	left: auto
-}
-.menu-1 ul ul li:hover > ul, .menu-1 ul ul li.focus > ul {
-	left: auto;}
-}
+	.menu-1 ul ul ul {
+		left: auto
+	}
+	.menu-1 ul ul li:hover > ul, .menu-1 ul ul li.focus > ul {
+		left: auto;}
+	}
 
 @media screen and (max-width: 1040px) {
 	.site-content,
 	.content-area,
 	.sidebar-1 {
-		width: 100%;
-		float: none
-}
+			width: 100%;
+			float: none
+	}
 
-.site-content,
-.site-info {
-	padding: 0 20px;
-}
+	.site-content,
+	.site-info {
+		padding: 0 20px;
+	}
 }
