@@ -8,3 +8,19 @@ Description: Used to style WooCommerce pages.
 	float: none;
 	clear: both
 }
+
+.woocommerce .woocommerce-ordering,
+.woocommerce .woocommerce-result-count {
+    margin: 0 0 2em;
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    margin: 0 5% 2.992em 0;
+    width: 30%;
+}
+
+.woocommerce ul.products li.last,
+.woocommerce-page ul.products li.last {
+    margin-right: 0;
+}
