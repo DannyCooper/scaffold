@@ -11,6 +11,9 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 A starter theme called Scaffold.
 
+Scaffold WordPress Theme, Copyright 2017 Danny Cooper
+Scaffold is distributed under the terms of the GNU GPL
+
 == Description ==
 
 Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customize!
