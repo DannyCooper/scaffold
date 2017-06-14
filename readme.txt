@@ -4,8 +4,8 @@ Contributors: DannyCooper
 Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, threaded-comments, translation-ready, blog, e-commerce
 
 Requires at least: 4.0
-Tested up to: 4.7.3
-Stable tag: 1.0.2
+Tested up to: 4.8
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,10 @@ Scaffold is a lightweight starter theme built using core WordPress functions. It
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.3 - June 14 2017 =
+* Add GPL note
+* Escape get_checkout_url()
 
 = 1.0.2 - May 30 2017 =
 * Fix custom header function
