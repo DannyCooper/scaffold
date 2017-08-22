@@ -2,7 +2,9 @@
 /**
  * Scaffold Theme Customizer
  *
- * @package scaffold
+ * @package    scaffold
+ * @copyright  Copyright (c) 2017, Danny Cooper
+ * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 /**

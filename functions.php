@@ -2,9 +2,11 @@
 /**
  * Scaffold functions and definitions
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * @link       https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package scaffold
+ * @package    scaffold
+ * @copyright  Copyright (c) 2017, Danny Cooper
+ * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 if ( ! function_exists( 'scaffold_setup' ) ) :

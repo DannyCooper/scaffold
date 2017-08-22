@@ -1,6 +1,9 @@
-/*
-Theme Name: Scaffold
-Description: Used to style the TinyMCE editor.
+/**
+ * Scaffold TinyMCE CSS
+ *
+ * @package     scaffold
+ * @copyright   Copyright (c) 2017, Danny Cooper
+ * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
 */
 
 h1, h2, h3, h4, h5, h6 {

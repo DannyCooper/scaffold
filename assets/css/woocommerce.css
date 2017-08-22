@@ -1,7 +1,11 @@
-/*
-Theme Name: Scaffold
-Description: Used to style WooCommerce pages.
+/**
+ * Scaffold WooCommerce CSS
+ *
+ * @package     scaffold
+ * @copyright   Copyright (c) 2017, Danny Cooper
+ * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
 */
+
 
 .woocommerce .content-area {
 	width: 100%;

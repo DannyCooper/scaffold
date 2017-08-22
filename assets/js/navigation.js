@@ -4,7 +4,9 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  *
- * @package scaffold
+ * @package    scaffold
+ * @copyright  Copyright (c) 2017, Danny Cooper
+ * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 ( function() {

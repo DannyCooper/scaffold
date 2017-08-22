@@ -2,9 +2,11 @@
 /**
  * The template for displaying search results pages
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * @link       https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package scaffold
+ * @package    scaffold
+ * @copyright  Copyright (c) 2017, Danny Cooper
+ * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 get_header(); ?>
@@ -15,7 +17,6 @@ get_header(); ?>
 		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				/* translators: %s: post title */
 				<h1 class="page-title">
 					<?php /* translators: %s: the search query */
 					printf( esc_html__( 'Search Results for: %s', 'scaffold' ), '<span>' . get_search_query() . '</span>' ); ?>

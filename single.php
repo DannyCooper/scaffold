@@ -2,9 +2,11 @@
 /**
  * The template for displaying all single posts
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * @link       https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package scaffold
+ * @package    scaffold
+ * @copyright  Copyright (c) 2017, Danny Cooper
+ * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 get_header(); ?>

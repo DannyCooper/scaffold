@@ -2,9 +2,11 @@
 /**
  * Template part for displaying page content in page.php
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link       https://codex.wordpress.org/Template_Hierarchy
  *
- * @package scaffold
+ * @package    scaffold
+ * @copyright  Copyright (c) 2017, Danny Cooper
+ * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 ?>

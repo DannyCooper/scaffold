@@ -5,9 +5,11 @@
  * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
- * @link https://codex.wordpress.org/Template_Hierarchy
+ * @link       https://codex.wordpress.org/Template_Hierarchy
  *
- * @package scaffold
+ * @package    scaffold
+ * @copyright  Copyright (c) 2017, Danny Cooper
+ * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
 /*
