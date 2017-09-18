@@ -13,7 +13,8 @@ get_header(); ?>
 	<div class="content-area">
 
 		<?php
-		while ( have_posts() ) : the_post();
+		while ( have_posts() ) :
+			the_post();
 
 			get_template_part( 'template-parts/content', 'page' );
 
@@ -22,8 +23,7 @@ get_header(); ?>
 				comments_template();
 			endif;
 
-		endwhile; // End of the loop.
-		?>
+		endwhile; ?>
 
 	</div><!-- .content-area -->
 

@@ -19,8 +19,7 @@
  */
 if ( post_password_required() ) {
 	return;
-}
-?>
+} ?>
 
 <div id="comments" class="comments-area">
 
@@ -45,27 +44,32 @@ if ( post_password_required() ) {
 					esc_html( number_format_i18n( $comments_number ) ),
 					get_the_title()
 				);
-			}
-			?>
+			} ?>
 		</h2><!-- .comments-title -->
 
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
 					'callback' => 'scaffold_comment',
-				) );
-			?>
+				) ); ?>
 		</ol><!-- .comment-list -->
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
-		<nav id="comment-nav-below" class="navigation comment-navigation clear" role="navigation">
-			<div class="nav-links">
+		<?php
+		if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( '&larr; Older Comments', 'scaffold' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'scaffold' ) ); ?></div>
+			<nav id="comment-nav-below" class="navigation comment-navigation clear" role="navigation">
+				<div class="nav-links">
 
-			</div><!-- .nav-links -->
-		</nav><!-- #comment-nav-below -->
+					<div class="nav-previous">
+						<?php previous_comments_link( esc_html__( '&larr; Older Comments', 'scaffold' ) ); ?>
+					</div>
+					<div class="nav-next">
+						<?php next_comments_link( esc_html__( 'Newer Comments &rarr;', 'scaffold' ) ); ?>
+					</div>
+
+				</div><!-- .nav-links -->
+			</nav><!-- #comment-nav-below -->
+
 		<?php
 		endif; // Check for comment navigation.
 
@@ -75,11 +79,13 @@ if ( post_password_required() ) {
 	// If comments are closed and there are comments, let's leave a little note, shall we?
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'scaffold' ); ?></p>
+		<p class="no-comments">
+			<?php esc_html_e( 'Comments are closed.', 'scaffold' ); ?>
+		</p>
+
 	<?php
 	endif;
 
-	comment_form();
-	?>
+	comment_form(); ?>
 
 </div><!-- #comments -->

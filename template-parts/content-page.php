@@ -19,7 +19,8 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<?php if ( get_edit_post_link() ) :
+	<?php
+	if ( get_edit_post_link() ) :
 
 		edit_post_link( esc_html__( '(Edit)', 'scaffold' ), '<p class="edit-link">', '</p>' );
 
@@ -27,13 +28,12 @@
 
 	<div class="entry-content">
 		<?php
-			the_content();
+		the_content();
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'scaffold' ),
-				'after'  => '</div>',
-			) );
-		?>
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'scaffold' ),
+			'after'  => '</div>',
+		) ); ?>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->

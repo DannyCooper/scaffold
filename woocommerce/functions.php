@@ -7,17 +7,17 @@
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
-if ( ! function_exists( 'scaffold_wc_checkout_link' ) ) :
-    /**
-     * If there are products in the cart, show a checkout link.
-     */
-    function scaffold_wc_checkout_link() {
-        global $woocommerce;
+if ( ! function_exists( 'scaffold_wc_checkout_link' ) ) {
+	/**
+	 * If there are products in the cart, show a checkout link.
+	 */
+	function scaffold_wc_checkout_link() {
+		global $woocommerce;
 
-        if ( sizeof( $woocommerce->cart->cart_contents) > 0 ) :
+		if ( count( $woocommerce->cart->cart_contents ) > 0 ) :
 
-             echo '<a href="' . esc_url( $woocommerce->cart->get_checkout_url() ) . '" title="' . esc_attr__( 'Checkout', 'scaffold' ) . '">' . esc_html__( 'Checkout', 'scaffold' ) . '</a>';
+			echo '<a href="' . esc_url( $woocommerce->cart->get_checkout_url() ) . '" title="' . esc_attr__( 'Checkout', 'scaffold' ) . '">' . esc_html__( 'Checkout', 'scaffold' ) . '</a>';
 
-        endif;
-    }
-endif;
+		endif;
+	}
+}

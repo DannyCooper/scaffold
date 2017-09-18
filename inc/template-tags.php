@@ -143,52 +143,56 @@ if ( ! function_exists( 'scaffold_comment' ) ) :
 	 * @param  int    $depth Comment depth.
 	 */
 	function scaffold_comment( $comment, $args, $depth ) {
+
 		switch ( $comment->comment_type ) :
-			case 'pingback' :
-			case 'trackback' :
+			case 'pingback':
+			case 'trackback':
 		?>
-		<li class="post pingback">
-		<p><?php esc_html_e( 'Pingback:', 'scaffold' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'scaffold' ), ' ' ); ?></p>
-	<?php
-			break;
-			default :
-		?>
-		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		<article id="comment-<?php comment_ID(); ?>" class="comment">
-			<footer class="comment-meta">
-				<div class="comment-author vcard">
-					<?php echo get_avatar( $comment, 40 ); ?>
-					<cite class="fn"><?php comment_author_link(); ?></cite>
-				</div><!-- .comment-author .vcard -->
-				<?php if ( '0' == $comment->comment_approved ) : ?>
-					<em><?php esc_html_e( 'Your comment is awaiting moderation.', 'scaffold' ); ?></em>
-					<br />
-				<?php endif; ?>
 
-				<div class="comment-metadata">
-					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
-					<?php
-						/* translators: 1: date, 2: time */
-						printf( esc_html__( '%1$s at %2$s', 'scaffold' ), get_comment_date(), get_comment_time() ); ?>
-						</time></a>
-						<?php edit_comment_link( esc_html__( '(Edit)', 'scaffold' ), ' ' );
-						?>
-					</div><!-- .comment-meta .commentmetadata -->
-				</footer>
-
-				<div class="comment-content"><?php comment_text(); ?></div>
-
-				<div class="reply">
-					<?php comment_reply_link( array_merge( $args, array(
-						'depth' => $depth,
-						'max_depth' => $args['max_depth'],
-						'reply_text' => 'Reply &darr;',
-					) ) ); ?>
-				</div><!-- .reply -->
-			</article><!-- #comment-## -->
+				<li class="post pingback">
+				<p><?php esc_html_e( 'Pingback:', 'scaffold' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'scaffold' ), ' ' ); ?></p>
 
 		<?php
-			break;
+				break;
+			default:
+		?>
+
+			<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+			<article id="comment-<?php comment_ID(); ?>" class="comment">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<?php echo get_avatar( $comment, 40 ); ?>
+						<cite class="fn"><?php comment_author_link(); ?></cite>
+					</div><!-- .comment-author .vcard -->
+					<?php if ( '0' === $comment->comment_approved ) : ?>
+						<em><?php esc_html_e( 'Your comment is awaiting moderation.', 'scaffold' ); ?></em>
+						<br />
+					<?php endif; ?>
+
+					<div class="comment-metadata">
+						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
+						<?php
+							/* translators: 1: date, 2: time */
+							printf( esc_html__( '%1$s at %2$s', 'scaffold' ), get_comment_date(), get_comment_time() ); ?>
+							</time></a>
+							<?php edit_comment_link( esc_html__( '(Edit)', 'scaffold' ), ' ' ); ?>
+						</div><!-- .comment-meta .commentmetadata -->
+					</footer>
+
+					<div class="comment-content"><?php comment_text(); ?></div>
+
+					<div class="reply">
+						<?php
+						comment_reply_link( array_merge( $args, array(
+							'depth' => $depth,
+							'max_depth' => $args['max_depth'],
+							'reply_text' => 'Reply &darr;',
+						) ) ); ?>
+					</div><!-- .reply -->
+				</article><!-- #comment-## -->
+
+		<?php
+				break;
 			endswitch;
 	}
 endif;
@@ -204,7 +208,7 @@ if ( ! function_exists( 'scaffold_the_post_navigation' ) ) :
 		$args = array(
 			'prev_text'                  => __( 'Previous Post: <span>%title</span>', 'scaffold' ),
 			'next_text'                  => __( 'Next Post: <span>%title</span>', 'scaffold' ),
-			);
+		);
 
 		the_post_navigation( $args );
 	}
@@ -219,10 +223,10 @@ if ( ! function_exists( 'scaffold_the_posts_navigation' ) ) :
 	 */
 	function scaffold_the_posts_navigation() {
 		$args = array(
-		'prev_text'          => __( '&larr; Older Posts', 'scaffold' ),
-		'next_text'          => __( 'Newer Posts &rarr;', 'scaffold' ),
-		'screen_reader_text' => __( 'Posts Navigation', 'scaffold' ),
-			);
+			'prev_text'          => __( '&larr; Older Posts', 'scaffold' ),
+			'next_text'          => __( 'Newer Posts &rarr;', 'scaffold' ),
+			'screen_reader_text' => __( 'Posts Navigation', 'scaffold' ),
+		);
 
 		the_posts_navigation( $args );
 	}
@@ -240,7 +244,8 @@ if ( ! function_exists( 'scaffold_thumbnail' ) ) :
 					<?php the_post_thumbnail(); ?>
 				</a>
 			</div><!-- .post-thumbnail -->
-		<?php }
+		<?php
+		}
 
 	}
 endif;

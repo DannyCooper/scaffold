@@ -14,7 +14,9 @@ get_header(); ?>
 	<div class="content-area">
 
 		<?php
-		while ( have_posts() ) : the_post();
+		while ( have_posts() ) :
+
+			the_post();
 
 			get_template_part( 'template-parts/content', get_post_format() );
 
@@ -25,8 +27,7 @@ get_header(); ?>
 
 			scaffold_the_post_navigation();
 
-		endwhile; // End of the loop.
-		?>
+		endwhile; ?>
 
 	</div><!-- .content-area -->
 
