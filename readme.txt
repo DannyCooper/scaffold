@@ -5,7 +5,7 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.3
+Stable tag: 1.1.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,10 @@ Scaffold is distributed under the terms of the GNU GPL
 == Description ==
 
 Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customize!
+
+Scaffold uses very minimal, low-specificity CSS rules, making it very easy to customize and overwrite using your own custom CSS code.
+
+The clean, fast, standards-compliant code makes this theme very SEO-friendly.
 
 == Installation ==
 
@@ -31,6 +35,11 @@ Scaffold is a lightweight starter theme built using core WordPress functions. It
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.1.0 - November 5 2017 =
+* Add wrappers to make layout easier to style
+* Remove custom comment code (use WP core function)
+* Improve table styling
 
 = 1.0.3 - June 14 2017 =
 * Add GPL note

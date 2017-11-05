@@ -23,7 +23,8 @@ get_header(); ?>
 				comments_template();
 			endif;
 
-		endwhile; ?>
+		endwhile;
+		?>
 
 	</div><!-- .content-area -->
 

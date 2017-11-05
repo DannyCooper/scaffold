@@ -13,17 +13,21 @@
 
 ?>
 
+		</div><!-- .wrapper -->
 	</div><!-- .site-content -->
 
 	<footer class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="wrapper">
+			<div class="site-info">
 
-			<?php
-			// translators: %1$s: theme name.
-			// translators: %2$s: theme author.
-			printf( esc_html__( 'Theme: %1$s by %2$s.', 'scaffold' ), 'Scaffold', '<a href="https://dannycooper.com/" rel="designer">Danny Cooper</a>' ); ?>
+				<?php
+				// translators: %1$s: theme name.
+				// translators: %2$s: theme author.
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'scaffold' ), '<a href="https://dannycooper.com/scaffold-theme/">Scaffold</a>', 'Danny Cooper' );
+				?>
 
-		</div><!-- .site-info -->
+			</div><!-- .site-info -->
+		</div><!-- .wrapper -->
 	</footer><!-- .site-footer -->
 
 <?php wp_footer(); ?>

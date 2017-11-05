@@ -23,8 +23,7 @@ if ( post_password_required() ) {
 
 <div id="comments" class="comments-area">
 
-	<?php
-	if ( have_comments() ) : ?>
+	<?php if ( have_comments() ) : ?>
 		<h4 class="comments-title">
 			<?php
 				$comments_number = get_comments_number();
@@ -44,18 +43,15 @@ if ( post_password_required() ) {
 					esc_html( number_format_i18n( $comments_number ) ),
 					get_the_title()
 				);
-			} ?>
+			}
+			?>
 		</h2><!-- .comments-title -->
 
 		<ol class="comment-list">
-			<?php
-				wp_list_comments( array(
-					'callback' => 'scaffold_comment',
-				) ); ?>
+			<?php wp_list_comments(); ?>
 		</ol><!-- .comment-list -->
 
-		<?php
-		if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 
 			<nav id="comment-nav-below" class="navigation comment-navigation clear" role="navigation">
 				<div class="nav-links">
@@ -77,7 +73,8 @@ if ( post_password_required() ) {
 
 
 	// If comments are closed and there are comments, let's leave a little note, shall we?
-	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
+	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+	?>
 
 		<p class="no-comments">
 			<?php esc_html_e( 'Comments are closed.', 'scaffold' ); ?>
@@ -86,6 +83,7 @@ if ( post_password_required() ) {
 	<?php
 	endif;
 
-	comment_form(); ?>
+	comment_form();
+	?>
 
 </div><!-- #comments -->

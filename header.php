@@ -28,34 +28,42 @@
 <div class="site-wrapper">
 
 	<header class="site-header" role="banner">
-		<div class="site-branding">
+		<div class="wrapper">
+			<div class="site-branding">
 
-			<?php
-			if ( has_custom_logo() ) {
-				scaffold_the_custom_logo();
-			}
+				<?php
+				if ( has_custom_logo() ) {
+					scaffold_the_custom_logo();
+				}
 
-			if ( is_front_page() && is_home() ) : ?>
+				if ( is_front_page() && is_home() ) :
+				?>
 
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-			<?php else : ?>
+				<?php else : ?>
 
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 
-			<?php endif;
+				<?php
+				endif;
 
-			$description = get_bloginfo( 'description', 'display' );
+				$description = get_bloginfo( 'description', 'display' );
 
-			if ( $description || is_customize_preview() ) : ?>
+				if ( $description || is_customize_preview() ) :
+				?>
 
-				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+					<p class="site-description">
+						<?php echo $description; /* WPCS: xss ok. */ ?>
+					</p>
 
-			<?php endif; ?>
+				<?php endif; ?>
 
-		</div><!-- .site-branding -->
+			</div><!-- .site-branding -->
+		</div><!-- .wrapper -->
 	</header><!-- .site-header -->
 
 	<?php get_template_part( 'template-parts/menu-1' ); ?>
 
 	<div class="site-content">
+		<div class="wrapper">

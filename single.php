@@ -27,7 +27,8 @@ get_header(); ?>
 
 			scaffold_the_post_navigation();
 
-		endwhile; ?>
+		endwhile;
+		?>
 
 	</div><!-- .content-area -->
 
