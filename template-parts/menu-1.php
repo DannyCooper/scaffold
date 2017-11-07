@@ -9,9 +9,9 @@
 
 ?>
 
-<nav id="site-navigation" class="menu-1" role="navigation">
+<nav id="site-navigation" class="menu-1">
 	<div class="wrapper">
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+		<button class="menu-toggle" aria-controls="site-menu" aria-expanded="false">
 			<?php esc_html_e( 'Site Navigation', 'scaffold' ); ?>
 		</button>
 

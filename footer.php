@@ -16,7 +16,7 @@
 		</div><!-- .wrapper -->
 	</div><!-- .site-content -->
 
-	<footer class="site-footer" role="contentinfo">
+	<footer class="site-footer">
 		<div class="wrapper">
 			<div class="site-info">
 
