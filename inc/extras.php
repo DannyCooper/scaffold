@@ -26,7 +26,7 @@ function scaffold_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
-	if ( ! comments_open() ) {
+	if ( ! is_post_type_archive() && ! comments_open() ) {
 		$classes[] = 'comments-closed';
 	}
 
