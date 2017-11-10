@@ -403,7 +403,6 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
 }
 
 dt {
@@ -619,6 +618,10 @@ a:active {
 	margin-right: auto;
 }
 
+.site-content {
+	padding-bottom: 25px
+}
+
 .page-template-full-width .content-area {
 	width: 100%;
 }
@@ -731,11 +734,6 @@ a:active {
 	left: 100%;
 }
 
-/* Small menu. */
-.menu-toggle {
-	display: none
-}
-
 .menu-1 a {
 	padding: 20px;
 	color: rgba(255, 255, 255, 0.8);
@@ -760,6 +758,11 @@ a:active {
 	font-size: 7px;
 	vertical-align: 1px;
 	padding-left: 5px;
+}
+
+/* Small menu. */
+.menu-toggle {
+	display: none
 }
 
 /*--------------------------------------------------------------

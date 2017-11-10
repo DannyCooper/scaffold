@@ -29,7 +29,7 @@
 
 	<header class="site-header">
 		<div class="wrapper">
-			<?php get_template_part( 'template-parts/branding.php' ); ?>
+			<?php get_template_part( 'template-parts/branding' ); ?>
 		</div><!-- .wrapper -->
 	</header><!-- .site-header -->
 
