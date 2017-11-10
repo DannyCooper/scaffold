@@ -359,7 +359,7 @@ html {
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+	background-color: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -456,7 +456,7 @@ input[type="submit"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
-	background: #e6e6e6;
+	background-color: #e6e6e6;
 	padding: 8px;
 }
 
@@ -615,7 +615,8 @@ a:active {
 
 .wrapper {
 	max-width: 1040px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .page-template-full-width .content-area,
@@ -659,7 +660,7 @@ a:active {
 --------------------------------------------------------------*/
 
 .menu-1 {
-	background: #253e80;
+	background-color: #253e80;
 	font-size: 14px;
 	margin-bottom: 50px
 }
@@ -713,12 +714,12 @@ a:active {
 }
 
 .menu-1 ul ul li {
-	background: #182b5f;
+	background-color: #182b5f;
 }
 
 .menu-1 li:hover,
 .menu-1 li.focus {
-	background: #182b5f
+	background-color: #182b5f
 }
 
 .menu-1 ul li:hover > ul,
@@ -742,7 +743,7 @@ a:active {
 }
 
 .menu-1 .sub-menu li:hover {
-	background: #0c1a40
+	background-color: #0c1a40
 }
 
 .menu-1 li.page_item_has_children > a:after,
@@ -1161,12 +1162,12 @@ object {
 	}
 
 	.menu-toggle {
-		background-color:#253e80;
+		background-color: #253e80;
 		color: white;
 		margin: 0 auto;
 		width: 100%;
-    border: 0;
-    border-radius: 0;
+	    border: 0;
+	    border-radius: 0;
 	}
 
 	.toggled .menu-toggle {
@@ -1179,7 +1180,7 @@ object {
 	.menu-toggle,
 	.menu-1.toggled #site-menu {
 		display: block;
-		background-color:#253e80;
+		background-color: #253e80;
 	}
 
 	.menu-1 li {
@@ -1194,7 +1195,8 @@ object {
 		display: none
 	}
 
-	.menu-1 ul li:hover > ul, .menu-1 ul li.focus > ul {
+	.menu-1 ul li:hover > ul,
+	.menu-1 ul li.focus > ul {
 		display: block;
 	}
 
@@ -1206,7 +1208,8 @@ object {
 		left: auto
 	}
 
-	.menu-1 ul ul li:hover > ul, .menu-1 ul ul li.focus > ul {
+	.menu-1 ul ul li:hover > ul,
+	.menu-1 ul ul li.focus > ul {
 		left: auto;
 	}
 
