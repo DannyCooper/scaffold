@@ -610,7 +610,7 @@ a:active {
 }
 
 /*--------------------------------------------------------------
-## Structure
+# Structure
 --------------------------------------------------------------*/
 
 .wrapper {
@@ -618,7 +618,8 @@ a:active {
 	margin: 0 auto;
 }
 
-.page-template-full-width .content-area {
+.page-template-full-width .content-area,
+.post-template-full-width .content-area {
 	width: 100%;
 }
 
@@ -764,6 +765,10 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+
+.site-content {
+	margin-bottom: 26px;
+}
 
 .content-area {
 	width: 600px;
