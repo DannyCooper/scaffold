@@ -5,7 +5,7 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,12 @@ The clean, fast, standards-compliant code makes this theme very SEO-friendly.
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.1.1 - November 10 2017 =
+* Lower css-specificity to allow easier customization
+* Move branding to a template-part to make header.php easier to customize and overwrite with child themes
+* Removes HTML roles
+* Fix aria-control on navigation
 
 = 1.1.0 - November 5 2017 =
 * Add wrappers to make layout easier to style
