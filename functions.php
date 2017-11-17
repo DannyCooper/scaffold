@@ -122,7 +122,7 @@ add_action( 'widgets_init', 'scaffold_widgets_init' );
  * Enqueue scripts and styles.
  */
 function scaffold_scripts() {
-	wp_enqueue_style( 'scaffolds-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'scaffold-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'scaffold-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
