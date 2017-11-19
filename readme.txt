@@ -4,8 +4,8 @@ Contributors: DannyCooper
 Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, threaded-comments, translation-ready, blog, e-commerce
 
 Requires at least: 4.0
-Tested up to: 4.8
-Stable tag: 1.1.2
+Tested up to: 4.9
+Stable tag: 1.1.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,10 @@ The clean, fast, standards-compliant code makes this theme very SEO-friendly.
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.1.3 - November 19 2017 =
+* Fix scaffold stylesheet handle
+* Add admin notice
 
 = 1.1.2 - November 10 2017 =
 * Bug fixes from 1.1.1
