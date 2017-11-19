@@ -167,3 +167,51 @@ require get_template_directory() . '/inc/jetpack.php';
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/woocommerce/functions.php';
 }
+
+/**
+ * Display the admin notice.
+ */
+function scaffold_admin_notice() {
+	global $current_user ;
+	$user_id = $current_user->ID;
+
+	/* Check that the user hasn't already clicked to ignore the message */
+	if ( ! current_user_can( 'install_plugins' ) ) {
+		return;
+	}
+
+	if ( ! get_user_meta( $user_id, 'scaffold_ignore_notice') ) {
+		?>
+
+		<div class="notice notice-info">
+			<p>
+				<?php
+				printf(
+					/* translators: 1: plugin link */
+					esc_html__( 'Easily change the font of your website with our new plugin - %1$s', 'scaffold' ),
+					'<a href="' . esc_url( admin_url( 'plugin-install.php?s=olympus+google+fonts&tab=search&type=term' ) ) . '">Google Fonts for WordPress</a>'
+				);
+				?>
+				<span style="float:right">
+					<a href="?scaffold_ignore_notice=0"><?php esc_html_e( 'Hide Notice', 'scaffold' ); ?></a>
+				</span>
+			</p>
+		</div>
+
+		<?php
+	}
+}
+add_action( 'admin_notices', 'scaffold_admin_notice' );
+
+/**
+ * Dismiss the admin notice.
+ */
+function scaffold_dismiss_admin_notice() {
+	global $current_user;
+	$user_id = $current_user->ID;
+	/* If user clicks to ignore the notice, add that to their user meta */
+	if ( isset( $_GET['scaffold_ignore_notice'] ) && '0' == $_GET['scaffold_ignore_notice'] ) {
+		add_user_meta( $user_id, 'scaffold_ignore_notice', 'true', true );
+	}
+}
+add_action( 'admin_init', 'scaffold_dismiss_admin_notice' );
