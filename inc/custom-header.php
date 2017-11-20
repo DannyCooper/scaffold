@@ -60,10 +60,12 @@ if ( ! function_exists( 'scaffold_header_style' ) ) :
 		}
 	<?php endif; ?>
 
-	.site-header {
-		background: url( <?php header_image(); ?> ) no-repeat;
-		background-size: cover;
-	}
+	<?php if ( has_header_image() ) : ?>
+		.site-header {
+			background: url( <?php header_image(); ?> ) no-repeat;
+			background-size: cover;
+		}
+	<?php endif; ?>
 
 	</style>
 	<?php
