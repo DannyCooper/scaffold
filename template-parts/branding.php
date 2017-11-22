@@ -31,9 +31,12 @@
 
 	<?php endif; ?>
 
-	<?php $description = get_bloginfo( 'description', 'display' );
+	<?php
 
-	if ( $description || is_customize_preview() ) : ?>
+	$description = get_bloginfo( 'description', 'display' );
+
+	if ( $description || is_customize_preview() ) :
+		?>
 
 		<p class="site-description">
 			<?php echo $description; /* WPCS: xss ok. */ ?>

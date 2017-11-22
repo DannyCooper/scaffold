@@ -68,8 +68,7 @@ if ( post_password_required() ) {
 
 		<?php endif; // Check for comment navigation. ?>
 
-		<?php
-		if ( ! comments_open() ) : // If comments are closed and there are comments, let's leave a little note, shall we? ?>
+		<?php if ( ! comments_open() ) : // If comments are closed and there are comments, output a message? ?>
 
 			<p class="no-comments">
 				<?php esc_html_e( 'Comments are closed.', 'scaffold' ); ?>

@@ -180,7 +180,7 @@ function scaffold_admin_notice() {
 		return;
 	}
 
-	if ( ! get_user_meta( $user_id, 'scaffold_ignore_notice') ) {
+	if ( ! get_user_meta( $user_id, 'scaffold_ignore_notice' ) ) {
 		?>
 
 		<div class="notice notice-info">
@@ -210,7 +210,7 @@ function scaffold_dismiss_admin_notice() {
 	global $current_user;
 	$user_id = $current_user->ID;
 	/* If user clicks to ignore the notice, add that to their user meta */
-	if ( isset( $_GET['scaffold_ignore_notice'] ) && '0' == $_GET['scaffold_ignore_notice'] ) {
+	if ( isset( $_GET['scaffold_ignore_notice'] ) && '0' === $_GET['scaffold_ignore_notice'] ) {
 		add_user_meta( $user_id, 'scaffold_ignore_notice', 'true', true );
 	}
 }

@@ -24,7 +24,8 @@
 
 		edit_post_link( esc_html__( '(Edit)', 'scaffold' ), '<p class="edit-link">', '</p>' );
 
-	endif; ?>
+	endif;
+	?>
 
 	<div class="entry-content">
 		<?php
@@ -33,7 +34,8 @@
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'scaffold' ),
 			'after'  => '</div>',
-		) ); ?>
+		) );
+		?>
 	</div><!-- .entry-content -->
 
 </article><!-- #post-## -->
