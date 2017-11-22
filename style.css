@@ -272,6 +272,7 @@ body {
 	font-family: Georgia;
 	font-size: 16px;
 	line-height: 1.6;
+	overflow-wrap: break-word;
 }
 
 nav,
@@ -288,7 +289,8 @@ h4,
 h5,
 h6 {
 	font-family: sans-serif;
-	color: #2d2e33
+	line-height: 1.25;
+	color: #2d2e33;
 }
 
 p {
@@ -746,19 +748,19 @@ a:active {
 
 .menu-1 li.page_item_has_children > a:after,
 .menu-1 li.menu-item-has-children > a:after {
-	color: rgba(255, 255, 255, 0.5);
 	content: '\25bc';
 	font-size: 7px;
 	vertical-align: 1px;
 	padding-left: 5px;
+	opacity: .75
 }
 .menu-1 li li.page_item_has_children > a:after,
 .menu-1 li li.menu-item-has-children > a:after {
-	color: rgba(255, 255, 255, 0.5);
 	content: '\25b6';
 	font-size: 7px;
 	vertical-align: 1px;
 	padding-left: 5px;
+	opacity: .75
 }
 
 /* Small menu. */
@@ -854,6 +856,29 @@ a:active {
 .single .byline,
 .group-blog .byline {
 	display: inline;
+}
+
+/*--------------------------------------------------------------
+## Archives
+--------------------------------------------------------------*/
+
+.archive-header {
+	margin-bottom: 25px;
+}
+
+.archive-header .archive-title {
+	font-size: 16px
+}
+
+.archive-header .archive-description {
+	font-size: 16px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.archive .post {
+	margin-bottom: 50px;
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 26px;
 }
 
 /*--------------------------------------------------------------

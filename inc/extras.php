@@ -45,3 +45,12 @@ function scaffold_pingback_header() {
 
 }
 add_action( 'wp_head', 'scaffold_pingback_header' );
+
+/**
+ * Replaces the excerpt "Read More" text by a link.
+ */
+function new_excerpt_more() {
+	global $post;
+	return '&hellip; <p><a class="moretag" href="' . get_permalink( $post->ID ) . '">' . esc_html__( 'Read the full article', 'scaffold' ) . '</a></p>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
