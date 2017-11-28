@@ -174,6 +174,10 @@ if ( class_exists( 'WooCommerce' ) ) {
 function scaffold_admin_notice() {
 	global $current_user ;
 	$user_id = $current_user->ID;
+	
+	if ( class_exists( 'Olympus_Google_Fonts' ) ) {
+		return;
+	}
 
 	/* Check that the user hasn't already clicked to ignore the message */
 	if ( ! current_user_can( 'install_plugins' ) ) {
