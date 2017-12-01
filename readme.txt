@@ -1,13 +1,13 @@
 === Scaffold ===
 
 Contributors: DannyCooper
-Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, flexible-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, threaded-comments, translation-ready, blog, e-commerce
-
 Requires at least: 4.0
 Tested up to: 4.9
 Stable tag: 1.1.4
-License: GNU General Public License v2 or later
+License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+GitHub Theme URI: https://github.com/DannyCooper/scaffold
+Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, flexible-header, custom-menu, custom-logo, editor-style, featured-images, full-width-template, threaded-comments, translation-ready, blog, e-commerce
 
 A starter theme called Scaffold.
 
