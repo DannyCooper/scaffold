@@ -41,7 +41,7 @@ get_header(); ?>
 
 			endwhile;
 
-			scaffold_the_posts_navigation( $args );
+			scaffold_the_posts_navigation();
 
 		else :
 

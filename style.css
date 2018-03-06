@@ -4,7 +4,7 @@ Theme URI: https://dannycooper.com/scaffold
 Author: DannyCooper
 Author URI: https://dannycooper.com/
 Description: Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customize!
-Version: 1.1.4
+Version: 1.1.5
 License: GNU General Public License v2 or later
 Text Domain: scaffold
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -418,6 +418,7 @@ dd {
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
+	vertical-align: bottom;
 }
 
 figure {
@@ -595,6 +596,8 @@ a:active {
 --------------------------------------------------------------*/
 .clear:before,
 .clear:after,
+.entry-content:before,
+.entry-content:after,
 .wrapper:before,
 .wrapper:after,
 .navigation:before,
@@ -605,6 +608,7 @@ a:active {
 }
 
 .clear:after,
+.entry-content:after,
 .wrapper:after,
 .navigation:after {
 	clear: both;
@@ -633,13 +637,10 @@ a:active {
 # Header
 --------------------------------------------------------------*/
 
-.site-branding {
-	padding: 50px 0;
-}
-
 .site-header {
 	text-align: center;
-	min-height: 173px
+	min-height: 173px;
+	padding: 50px 0;
 }
 
 .site-title {
@@ -775,6 +776,10 @@ a:active {
 .content-area {
 	width: 600px;
 	float: left;
+}
+
+.post-thumbnail {
+	margin-bottom: 16px
 }
 
 .entry-header {
@@ -1110,6 +1115,7 @@ object {
 
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
+	font-size: 14px
 }
 
 .wp-caption-text {
@@ -1182,7 +1188,7 @@ object {
 	}
 
 	.menu-1 a {
-	    border-top: 1px solid #2c468a;
+		border-top: 1px solid #2c468a;
 	}
 
 	.menu-toggle {
@@ -1190,8 +1196,8 @@ object {
 		color: white;
 		margin: 0 auto;
 		width: 100%;
-	    border: 0;
-	    border-radius: 0;
+    border: 0;
+    border-radius: 0;
 	}
 
 	.toggled .menu-toggle {
@@ -1243,12 +1249,16 @@ object {
 	.site-content,
 	.content-area,
 	.sidebar-1 {
-			width: 100%;
-			float: none
+		width: 100%;
+		float: none
 	}
 
 	.site-content,
 	.site-info {
 		padding: 0 20px;
+	}
+
+	.menu-1 .nav-menu > li:first-child {
+	  margin-left: 0;
 	}
 }

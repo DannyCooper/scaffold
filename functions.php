@@ -172,9 +172,9 @@ if ( class_exists( 'WooCommerce' ) ) {
  * Display the admin notice.
  */
 function scaffold_admin_notice() {
-	global $current_user ;
+	global $current_user;
 	$user_id = $current_user->ID;
-	
+
 	if ( class_exists( 'Olympus_Google_Fonts' ) ) {
 		return;
 	}

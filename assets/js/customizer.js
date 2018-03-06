@@ -37,7 +37,7 @@
 					'clip': 'auto',
 					'position': 'relative'
 				} );
-				$( '.site-title a, .site-description' ).css( {
+				$( '.site-title a' ).css( {
 					'color': to
 				} );
 			}

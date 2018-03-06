@@ -92,14 +92,12 @@ endif;
 
 if ( ! function_exists( 'scaffold_the_post_navigation' ) ) :
 	/**
-	 * Template for comments and pingbacks.
-	 *
-	 * Used as a callback by wp_list_comments() for displaying the comments.
+	 * Display navigation to next/previous post when applicable.
 	 */
 	function scaffold_the_post_navigation() {
 		$args = array(
-			'prev_text'                  => __( 'Previous Post: <span>%title</span>', 'scaffold' ),
-			'next_text'                  => __( 'Next Post: <span>%title</span>', 'scaffold' ),
+			'prev_text' => __( 'Previous Post: <span>%title</span>', 'scaffold' ),
+			'next_text' => __( 'Next Post: <span>%title</span>', 'scaffold' ),
 		);
 
 		the_post_navigation( $args );
@@ -125,14 +123,22 @@ endif;
 if ( ! function_exists( 'scaffold_thumbnail' ) ) :
 	/**
 	 * Output the thumbnail if it exists.
+	 *
+	 * @param string $size Thunbnail size to output.
 	 */
-	function scaffold_thumbnail() {
+	function scaffold_thumbnail( $size = '' ) {
 
 		if ( has_post_thumbnail() ) { ?>
 			<div class="post-thumbnail">
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<?php the_post_thumbnail(); ?>
-				</a>
+
+				<?php if ( ! is_single() ) : ?>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+						<?php the_post_thumbnail( null, $size ); ?>
+					</a>
+				<?php else : ?>
+					<?php the_post_thumbnail( null, $size ); ?>
+				<?php endif; ?>
+
 			</div><!-- .post-thumbnail -->
 		<?php
 		}

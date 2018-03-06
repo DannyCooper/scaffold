@@ -3,7 +3,7 @@
 Contributors: DannyCooper
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/DannyCooper/scaffold
@@ -20,7 +20,7 @@ Scaffold is a lightweight starter theme built using core WordPress functions. It
 
 Scaffold uses very minimal, low-specificity CSS rules, making it very easy to customize and overwrite using your own custom CSS code.
 
-The clean, fast, standards-compliant code makes this theme very SEO-friendly.
+The clean, fast, standards-compliant code ensures Scaffold is Search Engine Optimized (SEO).
 
 == Installation ==
 
@@ -35,6 +35,12 @@ The clean, fast, standards-compliant code makes this theme very SEO-friendly.
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.1.5 - March 6 2018 =
+* Don't show Google Fonts notice if plugin is installed
+* Add clearings to .entry-content
+* Change footer link
+* Add 'size' parameter to scaffold_thumbnail()
 
 = 1.1.4 - November 22 2017 =
 * Change archives to show excerpts instead of full posts
