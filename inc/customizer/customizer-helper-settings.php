@@ -35,7 +35,7 @@ function customizer_helper_settings() {
 
 	$settings['header-background-height'] = array(
 		'id'       => 'header-background-height',
-		'label'    => esc_html__( 'Header Height (px)', 'customizer-helper' ),
+		'label'    => esc_html__( 'Header Height (px)', 'scaffold' ),
 		'section'  => $section,
 		'type'     => 'number',
 		'priority' => 1,
@@ -44,7 +44,7 @@ function customizer_helper_settings() {
 
 	$settings['header-background-repeat'] = array(
 		'id'       => 'header-background-repeat',
-		'label'    => esc_html__( 'Header Background Repeat', 'customizer-helper' ),
+		'label'    => esc_html__( 'Header Background Repeat', 'scaffold' ),
 		'section'  => $section,
 		'type'     => 'radio',
 		'priority' => 12,
@@ -59,7 +59,7 @@ function customizer_helper_settings() {
 
 	$settings['header-background-size'] = array(
 		'id'       => 'header-background-size',
-		'label'    => esc_html__( 'Header Background Size', 'customizer-helper' ),
+		'label'    => esc_html__( 'Header Background Size', 'scaffold' ),
 		'section'  => $section,
 		'type'     => 'radio',
 		'priority' => 12,
@@ -73,7 +73,7 @@ function customizer_helper_settings() {
 
 	$settings['header-background-position'] = array(
 		'id'       => 'header-background-position',
-		'label'    => esc_html__( 'Header Background Position', 'customizer-helper' ),
+		'label'    => esc_html__( 'Header Background Position', 'scaffold' ),
 		'section'  => $section,
 		'type'     => 'select',
 		'priority' => 13,
@@ -87,7 +87,7 @@ function customizer_helper_settings() {
 
 	$settings['header-background-attachment'] = array(
 		'id'       => 'header-background-attachment',
-		'label'    => esc_html__( 'Scroll with Page', 'customizer-helper' ),
+		'label'    => esc_html__( 'Scroll with Page', 'scaffold' ),
 		'section'  => $section,
 		'type'     => 'checkbox',
 		'priority' => 14,
@@ -96,7 +96,7 @@ function customizer_helper_settings() {
 	$settings['navigation-bg-color'] = array(
 		'section'  => 'colors',
 		'id'       => 'navigation-bg-color',
-		'label'    => esc_html__( 'Navigation Color', 'customizer-helper' ),
+		'label'    => esc_html__( 'Navigation Color', 'scaffold' ),
 		'type'     => 'color',
 		'priority' => 41,
 		'default'  => '#253e80',

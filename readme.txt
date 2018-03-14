@@ -36,6 +36,9 @@ Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+= 1.2.1 - March 14 2018 =
+* Fix textdomain in customizer settings
+
 = 1.2.0 - March 14 2018 =
 * Add initial customizer settings
 
