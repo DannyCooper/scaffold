@@ -3,8 +3,8 @@ Theme Name: Scaffold
 Theme URI: https://dannycooper.com/scaffold
 Author: DannyCooper
 Author URI: https://dannycooper.com/
-Description: Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customize!
-Version: 1.1.5
+Description: Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customize! The clean, fast, standards-compliant code ensures Scaffold is Search Engine Optimized (SEO).
+Version: 1.2.0
 License: GNU General Public License v2 or later
 Text Domain: scaffold
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,8 +14,6 @@ GitHub Theme URI: https://github.com/DannyCooper/scaffold
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 */
 
 /*--------------------------------------------------------------
@@ -715,8 +713,8 @@ a:active {
 .menu-1 ul ul a {
 	width: 200px;
 	text-align: left;
-	border-top: 1px solid #253e80;
-	border-right: 1px solid #253e80
+	border-top: 1px solid rgba(255, 255, 255, 0.25);
+	border-right: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .menu-1 ul ul li {
