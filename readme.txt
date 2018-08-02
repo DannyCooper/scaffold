@@ -3,7 +3,7 @@
 Contributors: DannyCooper
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.2.0
+Stable tag: 1.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/DannyCooper/scaffold
@@ -35,6 +35,9 @@ The clean, fast, standards-compliant code ensures Scaffold is Search Engine Opti
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.2.2 - August 1 2018 =
+* Add WPML compatibility
 
 = 1.2.1 - March 14 2018 =
 * Fix textdomain in customizer settings
