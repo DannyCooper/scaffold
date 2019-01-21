@@ -5,7 +5,7 @@
  * @link https://jetpack.com/
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -17,11 +17,14 @@
  */
 function scaffold_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
-	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
-		'render'    => 'scaffold_infinite_scroll_render',
-		'footer'    => false,
-	) );
+	add_theme_support(
+		'infinite-scroll',
+		array(
+			'container' => 'main',
+			'render'    => 'scaffold_infinite_scroll_render',
+			'footer'    => false,
+		)
+	);
 
 	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );

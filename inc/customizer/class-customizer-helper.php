@@ -138,29 +138,25 @@ class Customizer_Helper {
 					case 'checkbox':
 					case 'number':
 					case 'range':
-
-						$wp_customize->add_control(
-							$setting['id'], $setting
-						);
-
+						$wp_customize->add_control( $setting['id'], $setting );
 						break;
 
 					case 'color':
-
 						$wp_customize->add_control(
 							new WP_Customize_Color_Control(
-								$wp_customize, $setting['id'], $setting
+								$wp_customize,
+								$setting['id'],
+								$setting
 							)
 						);
-
 						break;
 
 					case 'image':
-
 						$wp_customize->add_control(
 							new WP_Customize_Image_Control(
 								$wp_customize,
-								$setting['id'], array(
+								$setting['id'],
+								array(
 									'label'             => $setting['label'],
 									'section'           => $setting['section'],
 									'sanitize_callback' => $setting['sanitize_callback'],
@@ -170,15 +166,14 @@ class Customizer_Helper {
 								)
 							)
 						);
-
 						break;
 
 					case 'upload':
-
 						$wp_customize->add_control(
 							new WP_Customize_Upload_Control(
 								$wp_customize,
-								$setting['id'], array(
+								$setting['id'],
+								array(
 									'label'             => $setting['label'],
 									'section'           => $setting['section'],
 									'sanitize_callback' => $setting['sanitize_callback'],
@@ -188,17 +183,18 @@ class Customizer_Helper {
 								)
 							)
 						);
-
 						break;
 
 					case 'textarea':
-
-							$wp_customize->add_control( 'setting_id', array(
-								$wp_customize->add_control(
-									$setting['id'], $setting
-								),
-							) );
-
+							$wp_customize->add_control(
+								'setting_id',
+								array(
+									$wp_customize->add_control(
+										$setting['id'],
+										$setting
+									),
+								)
+							);
 						break;
 
 				}
@@ -266,7 +262,7 @@ class Customizer_Helper {
 
 		$settings_default = array(
 			'option_type'          => 'theme_mod', // Type of the setting. Default 'theme_mod'.
-			'capability'           => 'edit_theme_options', // Capability required for the setting. Default 'edit_theme_options'
+			'capability'           => 'edit_theme_options', // Capability required for the setting. Default 'edit_theme_options'.
 			'theme_supports'       => null, // Theme features required to support the panel. Default is none.
 			'default'              => null, // Default value for the setting. Default is empty string.
 			'transport'            => 'refresh', // 'refresh' or 'postMessage'. Default is 'refresh'.
@@ -279,16 +275,19 @@ class Customizer_Helper {
 		$settings = array_merge( $settings_default, $setting );
 
 		// Arguments for $wp_customize->add_setting.
-		$wp_customize->add_setting( $setting['id'], array(
-			'type'                 => $settings['option_type'],
-			'capability'           => $settings['capability'],
-			'theme_supports'       => $settings['theme_supports'],
-			'default'              => $settings['default'],
-			'transport'            => $settings['transport'],
-			'validate_callback'    => $settings['validate_callback'],
-			'sanitize_callback'    => $settings['sanitize_callback'],
-			'sanitize_js_callback' => $settings['sanitize_js_callback'],
-		) );
+		$wp_customize->add_setting(
+			$setting['id'],
+			array(
+				'type'                 => $settings['option_type'],
+				'capability'           => $settings['capability'],
+				'theme_supports'       => $settings['theme_supports'],
+				'default'              => $settings['default'],
+				'transport'            => $settings['transport'],
+				'validate_callback'    => $settings['validate_callback'],
+				'sanitize_callback'    => $settings['sanitize_callback'],
+				'sanitize_js_callback' => $settings['sanitize_js_callback'],
+			)
+		);
 
 	}
 

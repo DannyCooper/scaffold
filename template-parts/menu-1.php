@@ -3,7 +3,7 @@
  * Template part for displaying the primary navigation menu.
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -16,10 +16,12 @@
 		</button>
 
 		<?php
-		wp_nav_menu( array(
-			'theme_location' => 'menu-1',
-			'menu_id' => 'site-menu',
-		) );
+		wp_nav_menu(
+			array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'site-menu',
+			)
+		);
 		?>
 	</div><!-- .wrapper -->
 </nav><!-- .menu-1 -->

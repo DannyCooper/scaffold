@@ -5,7 +5,7 @@
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -31,10 +31,12 @@
 		<?php
 		the_content();
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'scaffold' ),
-			'after'  => '</div>',
-		) );
+		wp_link_pages(
+			array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'scaffold' ),
+				'after'  => '</div>',
+			)
+		);
 		?>
 	</div><!-- .entry-content -->
 

@@ -3,7 +3,7 @@
  * Template part for displaying the logo and site title.
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 

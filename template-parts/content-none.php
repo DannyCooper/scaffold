@@ -5,7 +5,7 @@
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -21,12 +21,18 @@
 
 			<p>
 				<?php
-				/* translators: %s: link to new post admin screen */
-				printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'scaffold' ), array(
-					'a' => array(
-						'href' => array(),
+				printf(
+					wp_kses(
+						/* translators: %s: link to new post admin screen */
+						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'scaffold' ),
+						array(
+							'a' => array(
+								'href' => array(),
+							),
+						)
 					),
-				) ), esc_url( admin_url( 'post-new.php' ) ) );
+					esc_url( admin_url( 'post-new.php' ) )
+				);
 				?>
 			</p>
 

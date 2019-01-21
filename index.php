@@ -10,7 +10,7 @@
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -22,13 +22,13 @@ get_header(); ?>
 	if ( have_posts() ) :
 
 		if ( is_home() && ! is_front_page() ) :
-		?>
+			?>
 
 			<header>
 				<h1 class="page-title"><?php single_post_title(); ?></h1>
 			</header>
 
-		<?php
+			<?php
 		endif;
 
 		/* Start the Loop */

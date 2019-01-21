@@ -3,7 +3,7 @@
  * Custom template tags for this theme
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -30,7 +30,8 @@ if ( ! function_exists( 'scaffold_posted_on' ) ) :
 			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
@@ -140,7 +141,7 @@ if ( ! function_exists( 'scaffold_thumbnail' ) ) :
 				<?php endif; ?>
 
 			</div><!-- .post-thumbnail -->
-		<?php
+			<?php
 		}
 
 	}

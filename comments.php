@@ -8,7 +8,7 @@
  * @link       https://codex.wordpress.org/Template_Hierarchy
  *
  * @package    scaffold
- * @copyright  Copyright (c) 2017, Danny Cooper
+ * @copyright  Copyright (c) 2019, Danny Cooper
  * @license    http://opensource.org/licenses/gpl-2.0.php GNU Public License
  */
 
@@ -32,14 +32,16 @@ if ( post_password_required() ) {
 				printf( esc_html_x( 'One Reply to &ldquo;%s&rdquo;', 'comments title', 'scaffold' ), get_the_title() );
 			} else {
 				printf(
-					/* translators: 1: number of comments, 2: post title */
-					esc_html( _nx(
-						'%1$s Reply to &ldquo;%2$s&rdquo;',
-						'%1$s Replies to &ldquo;%2$s&rdquo;',
-						$comments_number,
-						'comments title',
-						'scaffold'
-					) ),
+					esc_html(
+						/* translators: 1: number of comments, 2: post title */
+						_nx(
+							'%1$s Reply to &ldquo;%2$s&rdquo;',
+							'%1$s Replies to &ldquo;%2$s&rdquo;',
+							$comments_number,
+							'comments title',
+							'scaffold'
+						)
+					),
 					esc_html( number_format_i18n( $comments_number ) ),
 					get_the_title()
 				);
@@ -74,12 +76,12 @@ if ( post_password_required() ) {
 				<?php esc_html_e( 'Comments are closed.', 'scaffold' ); ?>
 			</p>
 
-		<?php
+			<?php
 		endif;
 
 	endif; // Check for have_comments().
 
 	comment_form();
-	?>
+?>
 
 </div><!-- #comments -->

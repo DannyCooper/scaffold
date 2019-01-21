@@ -1,8 +1,0 @@
-<wpml-config>
-  <admin-texts>
-    <key name="theme_mods_scaffold">
-      <key name="header_image"/>
-      <key name="header_image_data"/>
-    </key>
-  </admin-texts>
-</wpml-config>

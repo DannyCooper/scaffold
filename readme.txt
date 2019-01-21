@@ -3,7 +3,7 @@
 Contributors: DannyCooper
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.2.2
+Stable tag: 1.2.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/DannyCooper/scaffold
@@ -11,7 +11,7 @@ Tags: one-column, two-columns, right-sidebar, custom-background, custom-header, 
 
 A starter theme called Scaffold.
 
-Scaffold WordPress Theme, Copyright 2017 Danny Cooper
+Scaffold WordPress Theme, Copyright 2019 Danny Cooper
 Scaffold is distributed under the terms of the GNU GPL
 
 == Description ==
@@ -35,6 +35,9 @@ The clean, fast, standards-compliant code ensures Scaffold is Search Engine Opti
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.2.3 - August 1 2018 =
+* Impove coding standards
 
 = 1.2.2 - August 1 2018 =
 * Add WPML compatibility
