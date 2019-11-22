@@ -134,10 +134,10 @@ if ( ! function_exists( 'scaffold_thumbnail' ) ) :
 
 				<?php if ( ! is_single() ) : ?>
 					<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-						<?php the_post_thumbnail( null, $size ); ?>
+						<?php the_post_thumbnail( $size ); ?>
 					</a>
 				<?php else : ?>
-					<?php the_post_thumbnail( null, $size ); ?>
+					<?php the_post_thumbnail( $size ); ?>
 				<?php endif; ?>
 
 			</div><!-- .post-thumbnail -->

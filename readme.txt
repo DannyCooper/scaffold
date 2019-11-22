@@ -2,8 +2,8 @@
 
 Contributors: DannyCooper
 Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.2.3
+Tested up to: 5.3
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/DannyCooper/scaffold
@@ -36,8 +36,11 @@ Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+= 1.2.4 - November 2 2019 =
+* Fix 'scaffold_thumbnail' function
+
 = 1.2.3 - August 1 2018 =
-* Impove coding standards
+* Improve coding standards
 
 = 1.2.2 - August 1 2018 =
 * Add WPML compatibility

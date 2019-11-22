@@ -78,6 +78,8 @@ if ( ! function_exists( 'scaffold_setup' ) ) :
 
 		// Add image size for blog posts, 600px wide (and unlimited height).
 		add_image_size( 'scaffold-blog', 600 );
+		// Add image size for full width template, 1040px wide (and unlimited height).
+		add_image_size( 'scaffold-full-width', 1040 );
 
 		// Add stylesheet for the WordPress editor.
 		add_editor_style( '/assets/css/editor-style.css' );
