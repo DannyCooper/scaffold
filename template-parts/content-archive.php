@@ -13,7 +13,7 @@
 
 <article <?php post_class(); ?>>
 
-	<?php scaffold_thumbnail(); ?>
+	<?php scaffold_thumbnail( 'scaffold-blog' ); ?>
 
 	<header class="entry-header">
 

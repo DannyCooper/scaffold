@@ -4,7 +4,7 @@ Theme URI: https://olympusthemes.com/themes/scaffold/
 Author: DannyCooper
 Author URI: https://olympusthemes.com/
 Description: Scaffold is a lightweight starter theme built using core WordPress functions. It doesn't use any frameworks or libraries, this makes it fast, simple and easy to customize! The clean, fast, standards-compliant code ensures Scaffold is Search Engine Optimized (SEO). WPML-compatible.
-Version: 1.2.4
+Version: 1.3.0
 License: GNU General Public License v2 or later
 Text Domain: scaffold
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -833,6 +833,8 @@ a:active {
 
 .more-link {
 	text-decoration: none;
+	margin-bottom: 1.5em;
+	display: block
 }
 
 /*--------------------------------------------------------------
@@ -1186,11 +1188,10 @@ object {
 	}
 
 	.menu-1 a {
-		border-top: 1px solid #2c468a;
+		border-top: 1px solid rgba(255, 255, 255, 0.10);
 	}
 
 	.menu-toggle {
-		background-color: #253e80;
 		color: white;
 		margin: 0 auto;
 		width: 100%;
@@ -1199,7 +1200,6 @@ object {
 	}
 
 	.toggled .menu-toggle {
-		background-color: #132658;
 		color: white;
 		margin: 0 auto
 	}
@@ -1208,12 +1208,11 @@ object {
 	.menu-toggle,
 	.menu-1.toggled #site-menu {
 		display: block;
-		background-color: #253e80;
 	}
 
 	.menu-1 li {
 		float: none;
-	    width: 100%;
+	  width: 100%;
 	}
 
 	.menu-1 ul ul {

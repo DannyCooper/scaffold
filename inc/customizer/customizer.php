@@ -76,6 +76,12 @@ function scaffold_customizer_css() {
 		.menu-1 .sub-menu li:hover {
 			background-color: <?php echo scaffold_brightness( $bg_color, -75 ); // WPCS: XSS ok. ?>;
 		}
+		.menu-toggle {
+			background-color: <?php echo sanitize_hex_color( $bg_color ); // WPCS: XSS ok. ?>;
+		}
+		.toggled .menu-toggle {
+			background-color: <?php echo scaffold_brightness( $bg_color, -50 ); // WPCS: XSS ok. ?>;
+		}
 	</style>
 	<?php
 }

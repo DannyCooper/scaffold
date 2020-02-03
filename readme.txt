@@ -3,7 +3,7 @@
 Contributors: DannyCooper
 Requires at least: 4.0
 Tested up to: 5.3
-Stable tag: 1.2.4
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 GitHub Theme URI: https://github.com/DannyCooper/scaffold
@@ -35,6 +35,9 @@ The clean, fast, standards-compliant code ensures Scaffold is Search Engine Opti
 Scaffold includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.3.0 - February 4 2020 =
+* Improve mobile navigation CSS
 
 = 1.2.4 - November 2 2019 =
 * Fix 'scaffold_thumbnail' function
