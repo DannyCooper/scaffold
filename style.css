@@ -718,7 +718,7 @@ a:active {
 }
 
 .menu-1 ul ul li {
-	background-color: #182b5f;
+	background-color: #182b5f
 }
 
 .menu-1 li:hover,
@@ -753,6 +753,7 @@ a:active {
 	padding-left: 5px;
 	opacity: .75
 }
+
 .menu-1 li li.page_item_has_children > a:after,
 .menu-1 li li.menu-item-has-children > a:after {
 	content: '\25b6';
@@ -765,6 +766,18 @@ a:active {
 /* Small menu. */
 .menu-toggle {
 	display: none
+}
+
+.menu-toggle:hover,
+.menu-toggle.focus,
+.nav-menu a:hover,
+.nav-menu a.focus {
+	background-color: #182b5f
+}
+
+.menu-toggle,
+.nav-menu {
+	background-color: #253e80
 }
 
 /*--------------------------------------------------------------
@@ -989,7 +1002,6 @@ a:active {
 .comment-metadata a {
 	color: gray;
 	font-size: 14px;
-
 }
 
 .logged-in-as a {
@@ -1195,8 +1207,8 @@ object {
 		color: white;
 		margin: 0 auto;
 		width: 100%;
-    border: 0;
-    border-radius: 0;
+		border: 0;
+		border-radius: 0;
 	}
 
 	.toggled .menu-toggle {
@@ -1256,6 +1268,6 @@ object {
 	}
 
 	.menu-1 .nav-menu > li:first-child {
-	  margin-left: 0;
+		margin-left: 0;
 	}
 }
